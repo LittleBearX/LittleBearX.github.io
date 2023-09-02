@@ -55,9 +55,19 @@
 <section class="cover">
     
   <div class="cover-frame">
+
     <div class="bg-box">
-      <img src="/images/MIT.jpg" alt="image frame" />
+      <img src="" alt="" id="cover-pic" />
     </div>
+    <script>
+        document.addEventListener("DOMContentLoaded", function(event) {
+            var i=Math.floor((Math.random()*2));
+            imgs=[ "/images/Forrest.jpg", "/images/MIT.jpg",]
+            pic=document.getElementById("cover-pic");
+            pic.src=imgs[i];  
+        });
+    </script>
+      
     <div class="cover-inner text-center text-white">
       <h1><a href="/">小熊的博客</a></h1>
       <div id="subtitle-box">
@@ -158,11 +168,13 @@
       <footer class="footer">
   <div class="outer">
     <ul>
+      <!--
       <li>
         Copyrights &copy;
         2023
         <i class="ri-heart-fill heart_icon"></i> Little Bear
       </li>
+      -->
     </ul>
     <ul>
       <li>
